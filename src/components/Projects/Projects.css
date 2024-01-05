@@ -1,43 +1,43 @@
-/* Projects.css */
-
-.projects {
-  margin: 20px 0;
+.featured-projects {
+  max-height: 100vh;
   width: 100%;
-  /* Other styles for the overall projects section */
+  margin-top: 20px;
 }
 
-.projects h2 {
-  font-size: 1.5rem;
+.featured-projects h2 {
+  margin-left: 40%;
+  padding: 10px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.479);
+  display: inline-block;
+  border-radius: 50px;
+  color: rgba(0, 0, 0, 0.479);
   margin-bottom: 20px;
-  padding-left: 15px;
-  /* Other styles for the section title */
 }
-
-.projects-list {
+.elem {
+  position: relative;
   width: 100%;
+  height: 100px;
+  padding: 40px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+  overflow: hidden;
 }
-
-.project {
-  border-radius: 8px;
-  width: 250px;
-}
-
-.project-image {
+.overlay {
+  position: absolute;
   width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  height: 100%;
+  background-color: #d8e4dd;
+  top: -100%;
+  left: 0;
+  transition: all ease-in 0.2s;
+}
+.elem:hover .overlay {
+  top: 0;
 }
 
-@media screen and(max-width:768px) {
-  .project {
-    border-radius: 8px;
-    width: 100%;
-  }
-  .projects-list {
-    flex-wrap: wrap;
-    width: 100%;
-  }
+.elem h3,
+p {
+  z-index: 1;
 }

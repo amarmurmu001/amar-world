@@ -1,14 +1,14 @@
-
 @font-face {
-  font-family: 'Gilroy';
-  src: url('./assets/Gilroy-ExtraBold.otf') format('otf'), /* Replace with your file path */
-       url('./assets/Gilroy-Light.otf') format('otf'); /* Replace with your file path */
+  font-family: "Gilroy";
+  src: url("./assets/Gilroy-ExtraBold.otf") format("otf"),
+    /* Replace with your file path */ url("./assets/Gilroy-Light.otf")
+      format("otf"); /* Replace with your file path */
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
 }
 :root[data-theme="light"] {
   --text: #0f0f0f;
@@ -24,15 +24,14 @@
   --secondary: #1b2720;
   --accent: #ff3d40;
 }
-:root{
---linearPrimarySecondary: linear-gradient(#155630, #d8e4dd);
---linearPrimaryAccent: linear-gradient(#155630, #c20003);
---linearSecondaryAccent: linear-gradient(#d8e4dd, #c20003);
---radialPrimarySecondary: radial-gradient(#155630, #d8e4dd);
---radialPrimaryAccent: radial-gradient(#155630, #c20003);
---radialSecondaryAccent: radial-gradient(#d8e4dd, #c20003);
+:root {
+  --linearPrimarySecondary: linear-gradient(#155630, #d8e4dd);
+  --linearPrimaryAccent: linear-gradient(#155630, #c20003);
+  --linearSecondaryAccent: linear-gradient(#d8e4dd, #c20003);
+  --radialPrimarySecondary: radial-gradient(#155630, #d8e4dd);
+  --radialPrimaryAccent: radial-gradient(#155630, #c20003);
+  --radialSecondaryAccent: radial-gradient(#d8e4dd, #c20003);
 }
-main{
-  width: 80vw;
-  margin: 0 auto;
+main {
+  overflow-x: hidden;
 }

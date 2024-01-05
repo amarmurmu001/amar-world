@@ -1,47 +1,52 @@
-import React from 'react';
-import "./Projects.css"
+import React from "react";
+import "./Projects.css";
 
 const Projects = () => {
-  // Dummy project data (replace this with your actual project data)
   const projects = [
     {
       id: 1,
-      title: 'Project One',
-      description: 'Description for Project One',
-      imageUrl: 'https://via.placeholder.com/150',
+      name: "E-commerce Website",
+      description:
+        "Built a responsive e-commerce platform using React and Redux.",
     },
     {
       id: 2,
-      title: 'Project One',
-      description: 'Description for Project One',
-      imageUrl: 'https://via.placeholder.com/150',
+      name: "Task Management App",
+      description:
+        "Developed a task management application with user authentication using Node.js and MongoDB.",
     },
     {
       id: 3,
-      title: 'Project One',
-      description: 'Description for Project One',
-      imageUrl: 'https://via.placeholder.com/150',
+      name: "Blog Website",
+      description:
+        "Created a blog website using Gatsby.js for better performance and SEO optimization.",
     },
     {
       id: 4,
-      title: 'Project Two',
-      description: 'Description for Project Two',
-      imageUrl: 'https://via.placeholder.com/150',
+      name: "Weather App",
+      description:
+        "Designed a weather application fetching data from OpenWeatherMap API using React hooks.",
     },
-    // Add more project objects as needed
+    {
+      id: 5,
+      name: "Recipe Finder",
+      description:
+        "Implemented a recipe finder application using Spoonacular API and React with TypeScript.",
+    },
+    // Add more projects as needed
   ];
 
   return (
-    <section className="projects">
-      <h2>Projects</h2>
-      <div className="projects-list">
-        {projects.map(project => (
-          <div className="project" key={project.id}>
-            <img src={project.imageUrl} alt={project.title} className="project-image" />
-          </div>
-        ))}
-      </div>
-    </section>
+    <div className="featured-projects">
+      <h2>Featured Projects </h2>
+      {projects.map((project) => (
+        <div key={project.id} className="elem">
+          <div className="overlay"></div>
+          <h3>{project.name}</h3>
+          <p>{project.description}</p>
+        </div>
+      ))}
+    </div>
   );
 };
 
