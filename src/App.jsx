@@ -93,21 +93,36 @@ function App() {
       <div id="main">
         <Navbar />
         <Header />
-        <div className="featured-projects">
-          <h2> <div className="circle"></div>Featured Projects</h2>
-          {projects.map((project) => (
-            <div
-              key={project.id}
-              data-img={project.image}
-              className="elem"
-              onMouseEnter={showImage}
-              onMouseLeave={hideImage}
-            >
-              <div className="overlay"></div>
-              <h1>{project.name}</h1>
-              {/* <p>{project.description}</p> */}
-            </div>
-          ))}
+        <div className="container">
+          <div className="featured-projects">
+            <h2>
+              <div className="circle"></div>FEATURED PROJECTS
+            </h2>
+            {projects.map((project) => (
+              <div
+                key={project.id}
+                data-img={project.image}
+                className="elem"
+                onMouseEnter={showImage}
+                onMouseLeave={hideImage}
+              >
+                <div className="overlay"></div>
+                <h1>{project.name}</h1>
+                {/* <p>{project.description}</p> */}
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="page4"></div>
+        <div className="page5"></div>
+      </div>
+      <div className="footer">
+        <div className="footer-div">
+
+        </div>
+        <h1>AmarMurmu</h1>
+        <div className="footer-bottom">
+          
         </div>
       </div>
     </div>

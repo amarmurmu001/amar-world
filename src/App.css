@@ -38,9 +38,11 @@ body {
 }
 #main {
   position: relative;
-  background-color: white;
+  /* background-color: black; */
   z-index: 10;
-  height: auto;
+}
+.container{
+  background-color: #fff;
 }
 #fixed-img {
   width: 300px;
@@ -57,7 +59,7 @@ body {
 .featured-projects {
   height: 100vh;
   width: 100%;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .featured-projects h2 {
@@ -67,7 +69,7 @@ margin-left: 3vw;
 display: flex;
 align-items: center;
 gap: 10px;
-margin-top: 20px;
+padding-top: 20px;
 margin-bottom: 20px;
 }
 .circle{
@@ -107,5 +109,34 @@ p {
 
 .elem h1{
   font-size: 3vw;
+}
+.page4{
+  height: 60vh;
+  width: 100%;
+  background-color: #fff;
+}
+.page5{
+  height: 100vh;
+  width: 100%;
+}
+.footer{
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer h1{
+  font-size: 17vw;
+  border-bottom: 1px solid #dadada;
+}
+.footer-bottom{
+  height: 100px;
 }
 
