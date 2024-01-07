@@ -35,11 +35,7 @@
   .nav-links {
     display: none;
   }
-  .navbar{
-    position: absolute;
-    height: 100px;
-    padding: 50px 30px;
-  }
+  
   .logo a{
     font-size: 40px;
   }
